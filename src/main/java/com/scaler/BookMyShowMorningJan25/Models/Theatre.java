@@ -2,12 +2,17 @@ package com.scaler.BookMyShowMorningJan25.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 public class Theatre extends BaseModel{
     private String name;
     private String address;
-    @ManyToOne // Theatre M : 1 region
+    // Theatre M:1 Region
+    @ManyToOne
     private Region region;
 }
 

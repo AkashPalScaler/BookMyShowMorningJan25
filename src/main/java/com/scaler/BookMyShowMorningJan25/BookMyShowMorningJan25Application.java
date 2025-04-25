@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BookMyShowMorningJan25Application {
 
 	public static void main(String[] args) {
-		BaseModel bm = new BaseModel();
-		bm.setId(5L);
-		bm.getId();
 		SpringApplication.run(BookMyShowMorningJan25Application.class, args);
 	}
 
