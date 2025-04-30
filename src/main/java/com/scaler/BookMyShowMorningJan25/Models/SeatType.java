@@ -11,4 +11,12 @@ import java.util.List;
 @Entity
 public class SeatType extends BaseModel{
     private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }

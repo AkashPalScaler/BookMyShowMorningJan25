@@ -14,6 +14,30 @@ public class Theatre extends BaseModel{
     // Theatre M:1 Region
     @ManyToOne
     private Region region;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
+    }
 }
 
 // Inheritance: Pen [id, name, price]  \ BallPen : [id, radius, pen_id]

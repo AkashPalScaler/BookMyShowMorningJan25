@@ -31,6 +31,53 @@ public class Show extends BaseModel {
     @OneToMany
     private List<ShowSeatType> showSeatTypeList;
 
+    public Date getStart_time() {
+        return start_time;
+    }
+
+    public void setStart_time(Date start_time) {
+        this.start_time = start_time;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
+
+    public Theatre getTheatre() {
+        return theatre;
+    }
+
+    public void setTheatre(Theatre theatre) {
+        this.theatre = theatre;
+    }
+
+    public Screen getScreen() {
+        return screen;
+    }
+
+    public void setScreen(Screen screen) {
+        this.screen = screen;
+    }
+
+    public List<ShowSeat> getShowSeatList() {
+        return showSeatList;
+    }
+
+    public void setShowSeatList(List<ShowSeat> showSeatList) {
+        this.showSeatList = showSeatList;
+    }
+
+    public List<ShowSeatType> getShowSeatTypeList() {
+        return showSeatTypeList;
+    }
+
+    public void setShowSeatTypeList(List<ShowSeatType> showSeatTypeList) {
+        this.showSeatTypeList = showSeatTypeList;
+    }
 }
 
 
